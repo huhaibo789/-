@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.chengduhome.Saomaresult">
+<RelativeLayout
+    android:background="#0fdc3b"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <ImageView
+        android:id="@+id/return_show"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrowreturn"/>
+   <TextView
+       android:layout_centerInParent="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" 
+       android:text="上传结果"
+       android:textSize="18dp"
+       android:textColor="#fff"/>
+    <TextView
+        android:id="@+id/saveimg_tv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"/>
+</RelativeLayout>
+    <EditText
+        android:id="@+id/edit_text"
+        android:background="@drawable/evaluate_level"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginRight="20dp"/>
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="#EFDFDF"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="4"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center" >
+    </GridView>
+</LinearLayout>

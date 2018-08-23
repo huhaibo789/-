@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/right"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#05e65b"
+            android:theme="@style/ToolBarTheme"
+            >
+            <RelativeLayout
+                 android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:background="#e6bd0b"
+                    android:textSize="18dp"
+                    android:textColor="#fff"
+                    android:id="@+id/wanxia_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未完成"/>
+                <Button
+                    android:background="@null"
+                    android:id="@+id/wanxia_button"
+                    android:textSize="18dp"
+                    android:textColor="#fff"
+                    android:layout_toRightOf="@+id/wanxia_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="完成"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/show_iv"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scan"/>
+        </android.support.v7.widget.Toolbar>
+        <FrameLayout
+            android:id="@+id/frame_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:scrollbars="none"
+            android:elevation="5dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main"
+        />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

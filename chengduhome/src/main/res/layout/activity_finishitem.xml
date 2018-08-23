@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/clean_tv"
+            android:textColor="#222"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cleantv"/>
+    </RelativeLayout>
+    <EditText
+        android:layout_below="@+id/title_rl"
+        android:visibility="gone"
+        android:id="@+id/finish_edit"
+        android:background="@drawable/edit_finish"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        />
+
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/unfinish_rl"
+            android:layout_below="@+id/finish_edit"
+            android:id="@+id/zuobian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/finish_iv"
+                android:layout_marginTop="29dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:button="@null"
+                android:background="@drawable/tab_chose_status"
+                />
+            <TextView
+                android:id="@+id/unfinish"
+                android:layout_marginLeft="10dp"
+                android:textColor="#222"
+                android:layout_marginTop="26dp"
+                android:layout_toRightOf="@+id/finish_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/finishtv"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/finish_edit"
+        android:id="@+id/unfinish_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/unfinish_iv"
+            android:layout_marginTop="29dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ck_normal"
+            />
+        <TextView
+            android:layout_marginRight="20dp"
+            android:id="@+id/finish_tv"
+            android:layout_marginLeft="10dp"
+            android:textColor="#222"
+            android:layout_marginTop="26dp"
+            android:layout_toRightOf="@+id/unfinish_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unfinishtv"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

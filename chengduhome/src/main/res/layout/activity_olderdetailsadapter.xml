@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <TextView
+       android:id="@+id/datetime_tv"
+       android:textSize="18dp"
+       android:layout_marginTop="10dp"
+       android:layout_centerHorizontal="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="2017-11-29"/>
+    <View
+        android:id="@+id/view_show"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/datetime_tv"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdcdc"/>
+    <EditText
+        android:enabled="false"
+        android:layout_below="@+id/view_show"
+        android:id="@+id/edit_et"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+</RelativeLayout>

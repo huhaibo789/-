@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <RelativeLayout
+        android:background="#0fdc3b"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+           android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务详情"
+            android:textColor="#fff"
+            android:textSize="18dp"/>
+        <ImageView
+            android:id="@+id/return_iv"
+             android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowreturn"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/editor_tv"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/show_notask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(*^_^*)暂时没有任务信息"/>
+    </RelativeLayout>
+
+   <ListView
+
+       android:descendantFocusability="beforeDescendants"
+       android:id="@+id/list_show"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </ListView>
+</LinearLayout>

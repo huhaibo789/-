@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/showmessage_rl"
+        android:layout_below="@+id/ok_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fei"/>
+        <TextView
+            android:id="@+id/user_sex"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex_boy"/>
+        <TextView
+            android:id="@+id/user_time"
+            android:textSize="14dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"/>
+        <TextView
+
+            android:id="@+id/start_tv"
+            android:textColor="#0a21ea"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_work"/>
+    </RelativeLayout>
+</LinearLayout>
